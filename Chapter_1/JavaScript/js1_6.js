@@ -34,8 +34,8 @@
 // alert("Preço: R$ " + preco + "\nÀ vista: R$ " + precoDesc + "\nÀ prazo (3x): R$ " + precoPrazo.toFixed(2));
 
 // Elaborar um programa que leia 2 notas de um aluno em uma disciplina. Calcule e informe o média das notas.
-let nota1 = parseFloat(prompt("Nota 1:"));
-let nota2 = parseFloat(prompt("Nota 2"));
-let somaNota = nota1 + nota2;
-let media = 2;
-alert("Nota 1: " + nota1 + "\nNota 2: "+ nota2 + "\nTotal: " + somaNota + "\nMédia: " + (somaNota / media));
+// let nota1 = parseFloat(prompt("Nota 1:"));
+// let nota2 = parseFloat(prompt("Nota 2"));
+// let somaNota = nota1 + nota2;
+// let media = 2;
+// alert("Nota 1: " + nota1 + "\nNota 2: "+ nota2 + "\nTotal: " + somaNota + "\nMédia: " + (somaNota / media));
