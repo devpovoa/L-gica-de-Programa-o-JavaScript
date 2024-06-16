@@ -1,0 +1,24 @@
+
+body{
+    width: 100%;
+    text-align: center;
+    background-color: azure;
+}
+
+.title-main{
+    color: brown;
+}
+
+.aka{
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #46dada;
+}
+
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+}
