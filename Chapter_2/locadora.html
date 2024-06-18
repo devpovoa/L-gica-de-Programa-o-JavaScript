@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/IMG/videio-locadora.png" />
+    <script src="JavaScript/script.js" defer></script>
+    <link rel="stylesheet" href="" />
+    <title>Video Rental</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>Video Rental</h1>
+      <form action="">
+        <p>
+          <label for="inTitle">Title of film:</label>
+          <input
+            type="text"
+            id="inTitle"
+            name="Name"
+            placeholder="Title of film.."
+          />
+        </p>
+        <p>
+          <label for="inDuration">Duration (min):</label>
+          <input
+            type="text"
+            id="inDuration"
+            name="Time"
+            placeholder="Total minutes.."
+          />
+        </p>
+        <input
+          type="button"
+          value="Convert to Hours and Minutes"
+          id="btConvert"
+        />
+        <p class="outTitle"></p>
+        <p class="outResponse"></p>
+      </form>
+    </main>
+    <footer>&copy;<span class="aka">DevPovoa</span></footer>
+  </body>
+</html>
