@@ -1,19 +1,28 @@
 
 body{
-    width: 100%;
+    width: 90%;
     text-align: center;
-    background-color: azure;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,48,133,1) 65%, rgba(0,212,255,1) 100%);
 }
 
 .title-main{
-    color: brown;
+    color: rgb(184, 117, 117);
+}
+
+.name{
+    color: #fff;
+}
+
+#outResponse{
+    color: #fff;
 }
 
 .aka{
     text-align: center;
     font-size: 1.2rem;
     text-decoration: none;
-    color: #46dada;
+    color: #2a5858;
 }
 
 footer{
