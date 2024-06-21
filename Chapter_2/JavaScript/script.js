@@ -27,21 +27,35 @@
 
 // Script que demonstra o código para Revenda de Veículos.
 
-function calculateResale() {
-    const VALUEPROHIBITED = 0.50;
-    const VALUEFIXED = 12;
+// function calculateResale() {
+//     const VALUEPROHIBITED = 0.50;
+//     const VALUEFIXED = 12;
 
-    let vehicle = document.getElementById("inVehicle").value;
-    let price = Number( document.getElementById("inPrice").value);
+//     let vehicle = document.getElementById("inVehicle").value;
+//     let price = Number( document.getElementById("inPrice").value);
 
-    let calculeteProhibited = price * VALUEPROHIBITED;
-    let calculeteInstallments = calculeteProhibited / VALUEFIXED;
+//     let calculeteProhibited = price * VALUEPROHIBITED;
+//     let calculeteInstallments = calculeteProhibited / VALUEFIXED;
 
-    document.querySelector('.outVehicle').textContent = "Promotion: " + vehicle;
-    document.querySelector('.outValueProhibited').textContent = "Value of enter: R$ " + calculeteProhibited.toFixed(2);
-    document.querySelector('.outRemainingValue').textContent = " + 12x of R$: " + calculeteInstallments.toFixed(2);
+//     document.querySelector('.outVehicle').textContent = "Promotion: " + vehicle;
+//     document.querySelector('.outValueProhibited').textContent = "Value of enter: R$ " + calculeteProhibited.toFixed(2);
+//     document.querySelector('.outRemainingValue').textContent = " + 12x of R$: " + calculeteInstallments.toFixed(2);
+// }
+
+// let btPromotion = document.getElementById("btPromotion").addEventListener("click",calculateResale);
+
+// Script que faz a regra de negócio para o Restaurante JS.
+
+function calculateKiloGram() {
+    
+    const WEIGHTKILO = 1000;
+    let priceKilo =Number(document.getElementById("inPrice").value);
+    let consumptionGram =Number(document.getElementById("inConsumption").value);
+
+    consumptionGram *= priceKilo / WEIGHTKILO;
+
+    document.querySelector('.showValue').textContent = "Amount to pay R$: " + consumptionGram.toFixed(2);
+    
 }
 
-let btPromotion = document.getElementById("btPromotion").addEventListener("click",calculateResale);
-
-
+let btCalculate = document.getElementById("btCalculate").addEventListener("click", calculateKiloGram);
