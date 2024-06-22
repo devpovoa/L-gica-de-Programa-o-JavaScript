@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/JavaScript/script.js" defer></script>
+    <link rel="shortcut icon" href="/IMG/mercador.png" type="image/x-icon" />
+    <title>Supermercado JS</title>
+  </head>
+  <body>
+    <main>
+      <h1>Supermercado JS</h1>
+      <form>
+        <div>
+          <label for="inProduto">Produto:</label>
+          <input
+            type="text"
+            name="Produto"
+            id="inProduto"
+            placeholder="Informe o Produto"
+          />
+        </div>
+        <div>
+          <label for="inPreco">Preço R$:</label>
+          <input
+            type="number"
+            name="Preço"
+            id="inPreco"
+            placeholder="Preço unitário"
+          />
+        </div>
+
+        <input type="button" value="Ver Promoção" id="btPromocao" />
+
+        <p class="outResposta"></p>
+        <p class="outResultado"></p>
+
+        <input type="reset" value="Limpar" class="limpar" />
+        <input type="submit" value="Enviar" class="enviar" />
+      </form>
+    </main>
+    <footer>&copy;<span>DevPovoa</span></footer>
+  </body>
+</html>

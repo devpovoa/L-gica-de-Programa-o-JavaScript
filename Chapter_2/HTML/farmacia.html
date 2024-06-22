@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/IMG/farmacia.png" />
+    <script src="/JavaScript/script.js" defer></script>
+    <title>Farmácia JS</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>Farmácia JS</h1>
+      <form>
+        <div>
+          <label for="inRemedio">Medicamento:</label>
+          <input
+            type="text"
+            name="Medicamento"
+            id="inRemedio"
+            placeholder="Informe o medicamento..."
+          />
+        </div>
+        <div>
+          <label for="inPreco">Preço R$:</label>
+          <input type="number" name="Preço" id="inPreco" placeholder="Preço" />
+        </div>
+
+        <input type="button" value="Mostrar Promoção" id="btPromocao" />
+
+        <p class="outMedicamento"></p>
+        <p class="outPreco"></p>
+
+        <input type="reset" value="Limpar" class="btLimpar" />
+        <input type="submit" value="Enviar" class="btEnviar" />
+      </form>
+    </main>
+    <footer>&copy;<span>DevPovoa</span></footer>
+  </body>
+</html>
