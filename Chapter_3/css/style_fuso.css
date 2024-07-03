@@ -1,0 +1,29 @@
+img{
+    float: left;
+    height: 22.0rem;
+    width: 22.0rem;
+    background-color: #FFF;
+}
+
+h1{
+    border-bottom-style: inset; 
+}
+
+div{
+    padding: 0.3rem;
+    margin: 0.3rem;
+}
+
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+span{
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000;
+}
