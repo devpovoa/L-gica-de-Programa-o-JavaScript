@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/contames.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/javascript/script_contas.js" defer></script>
+    <title>Contas do Mês JS</title>
+  </head>
+  <body>
+    <main>
+      <img src="/img/contasmes.png" alt="Contas do Mês" class="normal" />
+
+      <h1>Controle de Contas do Mês</h1>
+
+      <form>
+        <div>
+          <label for="inDescricao">Descrição da Conta:</label>
+          <input
+            type="text"
+            name="Descricao"
+            id="inDescricao"
+            placeholder="Nome da conta"
+          />
+        </div>
+
+        <div>
+          <label for="inValor">Valor a Pagar R$:</label>
+          <input
+            type="number"
+            name="Valor"
+            id="inValor"
+            placeholder="Valor da conta"
+          />
+        </div>
+
+        <div>
+          <input type="button" value="Registrar Conta" id="btRegistrar" />
+          <input type="reset" value="Limpar Tela" id="btLimpar" />
+        </div>
+
+        <pre id="outListaContas"></pre>
+        <pre id="outTotal"></pre>
+      </form>
+    </main>
+    <footer>&copy;<span>DevPovoa</span></footer>
+  </body>
+</html>
