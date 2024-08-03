@@ -15,6 +15,14 @@ img.alta {
     background-color: #fff;
 }
 
+img.alta-nova {
+    float: right;
+    height: 21rem;
+    width: 21rem;
+    padding: 0.15rem;
+    background-color: #fff;
+}
+
 h1 {
     border-bottom-style: inset;
 }
