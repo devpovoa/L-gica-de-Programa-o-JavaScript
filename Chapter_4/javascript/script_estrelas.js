@@ -14,9 +14,9 @@ function preencherEstrela() {
 
     for (let i = 1; i <= numero; i++) {
         if (i % 2 == 1) {
-            estrelas = `${estrelas + "*"}`;
+            estrelas = `${estrelas + '⭐'}`;
         } else {
-            estrelas = `${estrelas + "-"}`; 
+            estrelas = `${estrelas + '-'}`; 
         }
     }
     
