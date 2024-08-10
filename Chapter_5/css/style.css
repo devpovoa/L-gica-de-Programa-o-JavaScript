@@ -1,0 +1,53 @@
+
+h1{
+    border-bottom-style: inset;
+}
+img.normal{
+    float: left;
+    width: 22rem;
+    height: 22rem;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    background-color: #fff;
+}
+
+div{
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+pre{
+    font-size: 1.2em;
+}
+
+.fonteAzul{
+    color: blue;
+}
+
+.oculta{
+    display: none;
+}
+
+.exibe{
+    display: inline;
+}
+
+.italico{
+    font-style: italic;
+    font-weight: bold;
+}
+
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.final{
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000;
+}

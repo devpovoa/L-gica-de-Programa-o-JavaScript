@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/img/carrosrevenda.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script-carrosrevenda.js" defer></script>
+    <title>Revenda de Carros</title>
+  </head>
+  <body>
+    <main>
+      <img
+        src="/img/carrosrevenda.png"
+        alt="Loja de Revenda de Carros"
+        class="normal"
+      />
+
+      <h1>Revenda de Carros</h1>
+
+      <div>
+        <label for="inModelo">Modelo:</label>
+        <input
+          type="text"
+          name="Nome"
+          id="inModelo"
+          placeholder="Modelo do veículo"
+          autofocus
+        />
+      </div>
+
+      <div>
+        <label for="inPreco">Preço:</label>
+        <input
+          type="number"
+          name="Preco"
+          id="inPreco"
+          placeholder="Preço do veículo"
+        />
+        <input type="button" value="Adicionar" id="btAdd" />
+      </div>
+
+      <div>
+        <input type="button" value="Listar Todos" id="btListar" />
+        <input type="button" value="Filtrar por Preço" id="btFiltro" />
+      </div>
+
+      <pre id="outLista"></pre>
+    </main>
+    <footer>&copy;<span class="final">DevPovoa</span></footer>
+  </body>
+</html>
