@@ -1,0 +1,13 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<script>
+  const preco = Number(prompt("Preço do Produto:"));
+  const desconto = 0.1;
+  const prazo = 3;
+  const precoDesc = preco - preco * desconto;
+  const precoPrazo = preco / prazo;
+  alert(
+    `Preço R$: ${preco.toFixed(2)}\nÀ Vista R$: ${precoDesc.toFixed(
+      2
+    )}\nOu 3x de R$: ${precoPrazo.toFixed(2)}`
+  );
+</script>
