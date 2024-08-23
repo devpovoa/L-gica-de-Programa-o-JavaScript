@@ -1,14 +1,15 @@
 img{
     float: left;
-    height: 22.0rem;
-    width: 22.0rem;
-    background-color: #FFF;
-    padding-right: 0.6rem ;
-    
+    height: 23.0rem;
+    width: 23.0rem;
 }
 
 h1{
-    border-bottom-style: inset; 
+    border-bottom-style: inset;
+}
+
+fieldset{
+    display: inline-block;
 }
 
 div{

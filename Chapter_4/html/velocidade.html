@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/pardao.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script_velocidade.js" defer></script>
+    <title>Velocimetro JS</title>
+  </head>
+  <body>
+    <main>
+      <img src="/img/pardao.png" alt="Pardao de Velocidade" />
+
+      <h1>Programa Verifica Velocidade JS</h1>
+      <form>
+        <div>
+          <label for="inVelocPermitida">Velocidade Permitida:</label>
+          <input
+            type="number"
+            min="20"
+            id="inVelocPermitida"
+            autofocus
+            required
+          />
+        </div>
+
+        <div>
+          <label for="inVelocCondutor">Velocidade do Condutor:</label>
+          <input type="number" min="20" id="inVelocCondutor" required />
+        </div>
+
+        <div>
+          <input type="submit" value="Verificar Velocidade" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+      <p class="outMulta"></p>
+    </main>
+    <footer>&copy;<span>DevPovoa</span></footer>
+  </body>
+</html>
