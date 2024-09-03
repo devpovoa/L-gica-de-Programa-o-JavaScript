@@ -1,24 +1,41 @@
-# Vetores e Arrays
+# Repetições
 
-**Inclusão e exclusão de itens.**
+### Estruturas de Repetição no JS
 
-```JS
-let codigo.push();
-let codido.unshift();
-let codigo.pop();
-let codigo.shift();
+```js
+for(){
+    
+};
+
+while(){
+    
+};
+
+do{
+    
+}while();
 ```
 
-**Formas de exibição.**
+### Pré fixada ou Pós fixada
 
-```JS
-toString()
-join()
+```js
+++i;
+i++;
+--i;
+i--;
 ```
 
-**Formas de verificação a existencia de um conteúdo no vetor.**
+### Acumuladores e Contadores
 
-```JS
-indexOf()
-lastIndexOf()
+```js
+let acumador += 'valor';
+let contador++;
 ```
+
+### Interrupções de laços
+
+```js
+break;
+continue;
+```
+

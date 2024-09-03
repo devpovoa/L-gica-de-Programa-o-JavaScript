@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/frutas.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script_repete.js" defer></script>
+    <title>Repete Fruta</title>
+  </head>
+  <body>
+    <main>
+      <img src="/img/frutas.png" alt="Programas de Computador" class="alta" />
+
+      <h1>Programa Repete Frutas JS</h1>
+      <form>
+        <div>
+          <label for="inFruta">Fruta:</label>
+          <input type="text" id="inFruta" autofocus required />
+        </div>
+
+        <div>
+          <label for="inNumero">Número:</label>
+          <input type="number" min="1" id="inNumero" required />
+        </div>
+
+        <div>
+          <input type="submit" value="Repetir Frutas" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+      <p id="outSaida"></p>
+    </main>
+    <footer>&copy;<span>DevPovoa</span></footer>
+  </body>
+</html>

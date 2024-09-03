@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/estrelas.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script_estrelas.js" defer></script>
+    <title>Fábrica de Estrelas</title>
+  </head>
+  <body>
+    <main>
+      <img src="/img/maquina.jpg" alt="Máquina de Estrelas" class="alta" />
+
+      <h1>Programa Máquina de Estrelas</h1>
+
+      <form>
+        <div>
+          <label for="inNumero">Número de Símbolos:</label>
+          <input type="number" min="1" id="inNumero" autofocus required />
+        </div>
+
+        <div>
+          <input type="submit" value="Preencher Espaço" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+      <p id="outSaida"></p>
+    </main>
+    <footer>&copy;<span>DevPovoa</span></footer>
+  </body>
+</html>
