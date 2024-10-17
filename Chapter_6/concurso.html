@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/img/concurso.png" type="image/x-icon" />
+    <script src="/js/script-concurso.js" defer></script>
+    <title>Concurso JS</title>
+  </head>
+  <body>
+    <main>
+      <img src="/img/concurso.png" alt="Concurso" class="normal" />
+
+      <h1>Programa Concurso JS</h1>
+
+      <form>
+        <div>
+          <label for="inCandidato">Candidato:</label>
+          <input type="text" id="inCandidato" autofocus required />
+        </div>
+
+        <div>
+          <label for="inAcertos">Nº Acertos:</label>
+          <input type="number" min="0" id="inAcertos" required />
+          <input type="submit" value="Adicionar" />
+        </div>
+
+        <div>
+          <input type="button" value="Listar Todos" id="btListar" />
+          <input type="button" value="Aprovados 2ª Etapa" id="btAprovados" />
+        </div>
+      </form>
+
+      <pre></pre>
+    </main>
+    <footer>&copy;<span class="final">DevPovoa</span></footer>
+  </body>
+</html>

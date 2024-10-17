@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/brinquedo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script-brinquedoteca.js" defer></script>
+    <title>Brinquedoteca</title>
+  </head>
+  <body>
+    <main>
+      <img src="/img/brinquedo.png" alt="Brinquedoteca" class="normal" />
+
+      <h1>Programa Brinquedoteca</h1>
+
+      <form>
+        <div>
+          <label for="inNome">Nome da Criança:</label>
+          <input
+            type="text"
+            id="inNome"
+            placeholder="Insira o nome"
+            autofocus
+            required
+          />
+        </div>
+
+        <div>
+          <label for="inIdade">Idade:</label>
+          <input
+            type="text"
+            id="inIdade"
+            min="0"
+            placeholder="Insira a Idade"
+            required
+          />
+          <input type="submit" value="Adicionar" />
+        </div>
+
+        <div>
+          <input type="button" value="Listar Todos" id="btListar" />
+          <input type="button" value="Resumir por idade" id="btResumir" />
+        </div>
+      </form>
+      <pre></pre>
+    </main>
+    <footer>&copy;<span class="final">DevPovoa</span></footer>
+  </body>
+</html>

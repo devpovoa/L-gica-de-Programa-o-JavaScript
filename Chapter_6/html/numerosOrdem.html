@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/img/novonumeros.png" type="image/x-icon" />
+    <script src="/js/script-numerosOrdem.js" defer></script>
+    <title>Ordena Números</title>
+  </head>
+  <body>
+    <main>
+      <img src="/img/novonumeros.png" alt="Números em Ordem" class="normal" />
+
+      <h1>Programa Números em Ordem</h1>
+
+      <form>
+        <div>
+          <label for="inNumero">Número:</label>
+          <input type="number" id="inNumero" min="0" autofocus required />
+          <input type="submit" value="Adicionar" />
+        </div>
+
+        <div>
+          <input type="button" value="Verfica Ordem" id="btVerificar" />
+          <input type="reset" value="Limpar Tela" id="btReset" />
+        </div>
+      </form>
+
+      <p id="outResp1"></p>
+      <p id="outResp2" class="fonteAzul"></p>
+    </main>
+    <footer>&copy;<span class="final">DevPovoa</span></footer>
+  </body>
+</html>

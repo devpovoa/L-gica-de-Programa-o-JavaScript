@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/tabelajogos.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script-eliminajogo.js" defer></script>
+    <title>Eliminatórias Jogos</title>
+  </head>
+  <body>
+    <main>
+      <img src="/img/tabelajogos.jpg" alt="Tabela de Jogos" class="normal" />
+
+      <h1>Programa Jogos Eliminatórios</h1>
+
+      <form>
+        <div>
+          <label for="inClube">Clube:</label>
+          <input
+            type="text"
+            id="inClube"
+            placeholder="nome do clube"
+            autofocus
+            required
+          />
+
+          <input type="submit" value="Adicionar" />
+        </div>
+
+        <div>
+          <input type="button" value="Listar Clubes" id="btListar" />
+          <input type="button" value="Montar Tabela de Jogos" id="btTabela" />
+        </div>
+      </form>
+
+      <pre></pre>
+    </main>
+
+    <footer>&copy;<span class="final">DevPovoa</span></footer>
+  </body>
+</html>

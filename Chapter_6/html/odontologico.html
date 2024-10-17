@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/dentista.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script-odontologia.js" defer></script>
+    <title>Consultório Odontológico</title>
+  </head>
+  <body>
+    <main>
+      <img
+        src="/img/dentista.png"
+        alt="Consultório Odontológico"
+        class="normal"
+      />
+
+      <h1>Consultório Odontológico</h1>
+
+      <form>
+        <div>
+          <label for="inPaciente">Paciente:</label>
+          <input
+            type="text"
+            id="inPaciente"
+            placeholder="Nome do Paciente"
+            autofocus
+            required
+          />
+
+          <input type="submit" value="Adicionar" />
+          <input type="button" value="Urgência" id="btUrgencia" />
+          <input type="button" value="Atender" id="btAtender" />
+        </div>
+      </form>
+      <h3>Em Atendimento: <span class="fonteAzul"></span></h3>
+
+      <pre></pre>
+    </main>
+    <footer>&copy;<span class="final">DevPovoa</span></footer>
+  </body>
+</html>
