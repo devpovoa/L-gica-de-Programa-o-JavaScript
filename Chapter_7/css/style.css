@@ -1,0 +1,18 @@
+img{
+    float: left;
+    height: 300px;
+    width: 300px;
+    
+}
+
+h1{
+    border-bottom-style: inset;
+}
+
+.entre-letras{
+    letter-spacing: 0.5em;
+}
+
+.alinha-direita{
+    text-align: right;
+}
