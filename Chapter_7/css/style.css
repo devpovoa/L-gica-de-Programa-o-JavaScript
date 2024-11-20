@@ -2,11 +2,23 @@ img{
     float: left;
     height: 300px;
     width: 300px;
-    
+    background-color: white;
+}
+
+img.img-correcao{
+    float: left;
+    height: 250px;
+    width: 250px;
+    margin-right: 1rem;
 }
 
 h1{
     border-bottom-style: inset;
+}
+
+div{
+    margin: 0.2rem;
+    padding: 0.2rem;
 }
 
 .entre-letras{
@@ -15,4 +27,17 @@ h1{
 
 .alinha-direita{
     text-align: right;
+}
+
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.final{
+    font-size: 1.2rem;
+    text-decoration: none;
 }

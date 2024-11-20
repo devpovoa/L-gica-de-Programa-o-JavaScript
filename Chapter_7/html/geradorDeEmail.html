@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/emails.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/geraEmail.js" defer></script>
+    <title>Gerador de Email</title>
+  </head>
+  <body>
+    <main>
+      <img src="/img/emails.png" alt="email" />
+      <h1>Programa Gerador de Email JS</h1>
+
+      <form>
+        <div>
+          <label for="inNome">Funcionário:</label>
+          <input type="text" id="inNome" autofocus required />
+        </div>
+
+        <div>
+          <input type="submit" value="Gerar E-mail" />
+          <input type="button" value="Reset" id="btReset" />
+        </div>
+      </form>
+      <h3>E-mail:<span></span></h3>
+    </main>
+    <footer>&copy;<span class="final">DevPovoa</span></footer>
+  </body>
+</html>

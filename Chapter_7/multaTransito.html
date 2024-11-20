@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/multa.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/multa.js" defer></script>
+    <title>Multa de Trânsito</title>
+  </head>
+  <body>
+    <main>
+      <img src="/img/multa.png" alt="Multa de Trânsito" />
+      <h1>Programa Multa de Trânsito JS</h1>
+
+      <form>
+        <div>
+          <label for="inData">Data da Infração:</label>
+          <input type="date" id="inData" autofocus required />
+        </div>
+
+        <div>
+          <label for="inMulta">Valor da Multa R$</label>
+          <input
+            type="number"
+            min="0"
+            step="0.01"
+            id="inMulta"
+            class="alinha-direita"
+          />
+        </div>
+
+        <div>
+          <input
+            type="submit"
+            value="Calcular Data Limite e Valor com Desconto"
+          />
+        </div>
+      </form>
+      <p id="outDataLimite"></p>
+      <p id="outComDesconto"></p>
+    </main>
+    <footer>&copy;<span class="final">DevPovoa</span></footer>
+  </body>
+</html>

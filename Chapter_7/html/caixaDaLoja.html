@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/caixaLoja.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/caixaLoja.js" defer></script>
+    <title>Caixa JS</title>
+  </head>
+  <body>
+    <main>
+      <img src="/img/caixaLoja.jpg" alt="Caixa Registradora" />
+      <h1>Programa Caixa Registradora JS</h1>
+
+      <form>
+        <div>
+          <label for="inDateVenc">Data de Vencimento:</label
+          ><input type="date" id="inDateVenc" autofocus required />
+        </div>
+
+        <div>
+          <label for="inValor">Valor da Conta:</label>
+          <input
+            type="number"
+            id="inValor"
+            min="0"
+            step="0.01"
+            class="alinha-direita"
+            required
+          />
+          <input type="submit" value="Calcular Multa e Juros" />
+        </div>
+
+        <div>
+          <label for="outMulta">Valor da Multa:</label>
+          <input type="number" id="outMulta" class="alinha-direita" readonly />
+        </div>
+
+        <div>
+          <label for="outJuros">Valor do Juros:</label>
+          <input type="number" id="outJuros" class="alinha-direita" readonly />
+        </div>
+
+        <div>
+          <label for="outTotal">Total a Pagar R$...:</label>
+          <input type="number" id="outTotal" class="alinha-direita" readonly />
+          <input type="reset" value="Nova Conta" />
+        </div>
+      </form>
+    </main>
+    <footer>&copy;<span class="final">DevPovoa</span></footer>
+  </body>
+</html>
