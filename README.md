@@ -28,7 +28,7 @@
 
 
 
-#### :warning: Todo conteúdo deste repositório e o resultado do estudo do livro:
+#### :warning: Todo conteúdo deste repositório e o resultado do estudo do livro com link abaixo, alguns exercícios eu mesmo refatorei e tomei a liberdade de corrigir 😁.
 
 #### :link: [Lógica de Programação e Algoritmos com JavaScript](https://www.amazon.com.br/L%C3%B3gica-Programa%C3%A7%C3%A3o-Algoritmos-com-JavaScript/dp/6586057906)
 
