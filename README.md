@@ -26,6 +26,8 @@
 
 **7. Strings e datas**
 
+**8. Funções e eventos**
+
 
 
 #### :warning: Todo conteúdo deste repositório e o resultado do estudo do livro com link abaixo, alguns exercícios eu mesmo refatorei e tomei a liberdade de corrigir 😁.
