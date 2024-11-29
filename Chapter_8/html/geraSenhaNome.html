@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gerador de senha com uso de nome e sobrenome"
+    />
+    <link rel="shortcut icon" href="/img/password.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/geraSenha.js" defer></script>
+    <title>Gerador de Senha</title>
+  </head>
+  <body>
+    <header>
+      <img src="/img/password.png" alt="Logo de Senha" class="normal" />
+      <h1>Programa Gerador de Password JS</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Painel Gerador de Senhas</h2>
+        <form>
+          <fieldset>
+            <legend>Dados para Gerar a Senha</legend>
+            <div>
+              <label for="inNome">Nome do Aluno:</label>
+              <input type="text" name="nome" id="inNome" autofocus required />
+            </div>
+
+            <button type="submit">Gerar Senha</button>
+            <button type="reset">Reset</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>Dados Gerado</legend>
+            <label for="outSenha">Senha Inicial:</label>
+            <output name="outResultado" for="inNome" id="outSenha"></output>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2024 <span class="final">DevPovoa</span> - Todos os direitos
+        Reservados.
+      </p>
+    </footer>
+  </body>
+</html>

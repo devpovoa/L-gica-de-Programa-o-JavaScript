@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Clínica Veterinária para saúde dos animais."
+    />
+    <link rel="shortcut icon" href="/img/veterinario.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/veterinaria.js" defer></script>
+    <title>Clínica Veterinária</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="/img/veterinario.png"
+        alt="Logo de Clínica Veterinária"
+        class="normal"
+      />
+      <h1>Programa Veterinária JS</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Painel de Verificação do Cliente</h2>
+        <form id="formConsulta">
+          <fieldset>
+            <legend>Informações da Consulta</legend>
+            <div>
+              <label for="inValor">Valor da Vacina:</label>
+              <input
+                type="number"
+                name="valor"
+                min="0"
+                step="0.01"
+                id="inValor"
+                autofocus
+                required
+              />
+            </div>
+
+            <div>
+              <label>Possui Convênio:</label>
+              <input type="radio" name="opcao" id="btSim" value="sim" />
+              <label for="btSim">Sim</label>
+
+              <input type="radio" name="opcao" id="btNao" value="nao" checked />
+              <label for="btNao">Não</label>
+            </div>
+
+            <div class="oculta" id="dConvenio">
+              <label for="convenio">Convênio:</label>
+              <select name="convenio" id="convenio">
+                <option value="amigo">Amigos dos Animais</option>
+                <option value="saude">Saúde Animal</option>
+              </select>
+            </div>
+
+            <button type="submit">Calcular Desconto</button>
+            <button type="reset">Reset</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>Informações sobre o Pagamento</legend>
+            <label for="outDesconto">Desconto (R$):</label>
+            <input type="number" name="desconto" id="outDesconto" readonly />
+            <hr />
+            <label for="outValor">A Pagar (R$):</label>
+            <input type="number" name="pagamento" id="outValor" readonly />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2024 <span class="final">DevPovoa</span> - Todos os direitos
+        reservados.
+      </p>
+    </footer>
+  </body>
+</html>
