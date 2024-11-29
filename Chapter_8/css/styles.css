@@ -1,0 +1,76 @@
+h1{
+    border-bottom-style: inset;
+}
+
+img.normal{
+    float: left;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+
+img.alta{
+    float: left;
+    height: 420px;
+    width: 300px;
+    background-color: white;
+}
+
+fieldset{
+    width: 45%;
+}
+
+div{
+    padding: 0.2rem;
+    margin: 0.2rem;
+}
+
+
+#label-item{
+    margin-left: 70px;
+}
+
+
+select{
+    width: 150px;
+}
+
+.alinha-direita{
+    text-align: right;
+}
+
+.detalhes{
+    width: 23.5rem;
+}
+
+.oculta{
+    display: none;
+}
+
+.exibe{
+    display: inline;
+}
+
+.exibe-linha{
+    display: block;
+}
+
+pre{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+footer,p{
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    color: black;
+}
+
+.final{
+    font-size: 1.2rem;
+    text-decoration: none;
+}

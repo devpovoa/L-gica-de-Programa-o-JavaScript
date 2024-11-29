@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Revenda de carros com opções de financiamento, cálculo de entrada e parcelas."
+    />
+    <link rel="icon" href="/img/revendacarros.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/revendacarros.js" defer></script>
+    <title>Revenda Carros</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img
+          src="/img/revendacarros.png"
+          alt="Logo da Revenda de Carros"
+          class="normal"
+        />
+        <h1>Revenda de Carros JS</h1>
+      </header>
+
+      <section>
+        <h2>Classifique e calcule as condições de pagamento do seu veículo</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Informações do Veículo</legend>
+            <div>
+              <label for="inModelo">Modelo do Veículo:</label>
+              <input
+                type="text"
+                name="modelo"
+                id="inModelo"
+                autofocus
+                required
+              />
+            </div>
+
+            <div>
+              <label for="inAno">Ano de Fabricação:</label>
+              <input type="number" name="ano" min="1900" id="inAno" required />
+            </div>
+
+            <div>
+              <label for="inValor">Preço (R$):</label>
+              <input
+                type="number"
+                id="inValor"
+                name="valor"
+                min="0"
+                step="0.01"
+                required
+              />
+            </div>
+
+            <div>
+              <button type="submit">
+                Classificar - Calcular Entrada e Parcelas
+              </button>
+              <button type="reset">Nova Pesquisa</button>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Informaçoes gerais sobre o cálculo e financiamento</legend>
+            <div>
+              <label for="outDescricao">Classificação do Veículo:</label>
+              <input
+                type="text"
+                name="descrição"
+                id="outDescricao"
+                class="alinha-direita"
+                readonly
+              />
+            </div>
+            <div>
+              <label for="outEntrada">Valor da entrada:</label>
+              <input
+                type="number"
+                name="entrada"
+                id="outEntrada"
+                class="alinha-direita"
+                readonly
+              />
+            </div>
+            <div>
+              <label for="outParcelas">+10x de (R$):</label>
+              <input
+                type="number"
+                name="parcelas"
+                id="outParcelas"
+                class="alinha-direita"
+                readonly
+              />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2024 <span class="final">DevPovoa</span>. Todos os direitos
+        reservados.
+      </p>
+    </footer>
+  </body>
+</html>

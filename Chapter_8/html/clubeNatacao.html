@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Clube de natação para todas as idades." />
+    <link rel="shortcut icon" href="/img/natacao.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/natacao.js" defer></script>
+    <title>Clube de Natação</title>
+  </head>
+  <body>
+    <head>
+      <img src="/img/natacao.png" alt="Logo de Natação" class="normal" />
+      <h1>Clube de Natação JS</h1>
+    </head>
+
+    <main>
+      <section>
+        <h2>Painel para categorizer a classe do atleta</h2>
+        <form>
+          <fieldset>
+            <legend>Painel de Informações</legend>
+            <div>
+              <label for="inNome">Nome do Atleta:</label>
+              <input type="text" name="nome" id="inNome" autofocus required />
+            </div>
+
+            <div>
+              <label for="inIdade">Idade:</label>
+              <input
+                type="number"
+                name="idade"
+                min="1"
+                step="1"
+                id="inIdade"
+                required
+              />
+            </div>
+
+            <button type="submit">Categorizar</button>
+            <button type="reset" id="btReset">Reset</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>Categoria</legend>
+            <textarea
+              name="informacoes"
+              id="outSaida"
+              rows="5"
+              cols="79"
+              readonly
+            ></textarea>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2024 <span class="final">DevPovoa</span> - Todos os direitos
+        reservados.
+      </p>
+    </footer>
+  </body>
+</html>

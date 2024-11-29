@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pizzaria com grandes variedades de sabores de pizzas e bebidas quentes e geladas."
+    />
+    <link rel="icon" href="/img/pizzaria.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/pizzaria.js" defer></script>
+    <title>Pizzaria</title>
+  </head>
+  <body>
+    <header>
+      <img src="/img/pizzaria.png" alt="Logo da Pizzaria" class="normal" />
+      <h1>Programa Pizzaria JS - Controle de Pedidos</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Selecione o tamanha, sabor e tipo de bebida</h2>
+        <form>
+          <fieldset>
+            <legend>Opções do Pedido</legend>
+            <div>
+              <label>Item do Pedido:</label>
+              <input type="radio" name="opcao" id="btPizza" checked autofocus />
+              <label for="btPizza">Pizza</label>
+
+              <input type="radio" name="opcao" id="btBebida" />
+              <label for="btBebida">Bebida</label>
+
+              <label><span id="label-item">Item:</span></label>
+              <select name="pizza" id="inPizza">
+                <option value="media">Pizza Média</option>
+                <option value="grande">Pizza Grande</option>
+                <option value="familia">Pizza Família</option>
+              </select>
+
+              <select name="bebida" id="inBebida" class="oculta">
+                <option value="refri">Refrigerante Litro</option>
+                <option value="suco">Jarra de Suco</option>
+                <option value="agua">Água Mineral</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="inDetalhes">Detalhes do Item:</label>
+              <input
+                type="text"
+                name="detalhes"
+                id="inDetalhes"
+                class="detalhes"
+                aria-label="Detalhes do Item"
+                required
+              />
+              <button type="submit">Adicionar</button>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Informações do Pedido</legend>
+            <textarea
+              name="informacoes"
+              id="outSaida"
+              cols="79"
+              rows="5"
+              readonly
+              placeholder="As informações do seu pedido aparecerão aqui"
+              aria-label="Informações do Pedido"
+            ></textarea>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2024 <span class="final">DevPovoa</span>. Todos os direitos
+        reservados.
+      </p>
+    </footer>
+  </body>
+</html>
