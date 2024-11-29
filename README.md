@@ -28,7 +28,7 @@
 
 **8. Funções e eventos**
 
-
+**9. Persistência de dados com localStorage**
 
 #### :warning: Todo conteúdo deste repositório e o resultado do estudo do livro com link abaixo, alguns exercícios eu mesmo refatorei e tomei a liberdade de corrigir 😁.
 
