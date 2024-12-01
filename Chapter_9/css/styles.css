@@ -1,0 +1,36 @@
+pre {
+  font-size: 1.2em;
+}
+
+img {
+  clip-path: circle(50%);
+}
+
+.cores-Brasil {
+  color: yellow;
+  background-color: green;
+}
+
+.cores-Flamengo {
+  color: red;
+  background-color: black;
+}
+
+.cores-Botafogo {
+  color: white;
+  background-color: black;
+}
+
+footer,
+p {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  color: black;
+}
+
+.final {
+  font-size: 1.2em;
+  text-decoration: none;
+}

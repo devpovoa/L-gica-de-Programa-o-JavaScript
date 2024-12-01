@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Loja Club Store, representações de clubes de esporte de sua preferência."
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" href="/img/camisa-de-futebol.png" type="image/x-icon" />
+    <script src="/js/lojaEsporte.js" defer></script>
+    <title>Club Store</title>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="row" id="divTitulo">
+        <div class="col-sm-7">
+          <h1>Loja de Esportes JS</h1>
+          <h2>Produtos esportivos em geral</h2>
+        </div>
+        <aside class="col-sm-3">
+          <h5>Qual Clube você torce?</h5>
+          <form>
+            <fieldset>
+              <legend>Escolha o clube:</legend>
+              <input type="radio" name="clube" id="rbBasil" />
+              <label for="rbBasil">Brasil</label>
+              <br />
+              <input type="radio" name="clube" id="rbFlamengo" />
+              <label for="rbFlamengo">Flamengo</label>
+              <br />
+              <input type="radio" name="clube" id="rbBotafogo" />
+              <label for="rbBotafogo">Botafogo</label>
+            </fieldset>
+          </form>
+        </aside>
+        <div class="col-sm-2">
+          <img id="imgClube" class="d-none" alt="Logo do Clube" />
+        </div>
+      </div>
+    </header>
+    <footer>
+      <p>
+        &copy; 2024 <span class="final">DevPovoa</span> - Todos os direitos
+        reservados.
+      </p>
+    </footer>
+  </body>
+</html>
