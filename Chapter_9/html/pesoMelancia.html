@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jogo para apostas sobre o peso certo ou próximo da melância."
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="shortcut icon" href="/img/melancia.png" type="image/x-icon" />
+    <!-- <script src="/js/melancia.js" defer></script> -->
+    <script src="/js/melancia-refactored.js" defer></script>
+    <title>Jogo da Melância</title>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="/img/melancia.png" alt="Melancia" class="img-fluid" />
+        </div>
+
+        <section class="col-sm-8">
+          <h1>Qual é o peso da Melância?</h1>
+          <form>
+            <div>
+              <label for="inNome">Nome do Apostador:</label>
+              <input
+                type="text"
+                name="nome"
+                id="inNome"
+                class="form-control"
+                required
+                autofocus
+              />
+            </div>
+
+            <div>
+              <label for="inPeso">Peso (em gramas):</label>
+              <input
+                type="text"
+                name="peso"
+                id="inPeso"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div>
+              <input type="submit" value="Apostar" class="btn btn-primary" />
+              <input
+                type="button"
+                value="Vencedor"
+                id="btVencedor"
+                class="btn btn-warning"
+              />
+              <input
+                type="button"
+                value="Limpar Apostas"
+                id="btLimpar"
+                class="btn btn-danger"
+              />
+            </div>
+          </form>
+
+          <pre></pre>
+        </section>
+      </div>
+    </header>
+    <footer>
+      <div>
+        &copy; 2024 <span class="final">DevPovoa</span> - Todos direitos
+        reservados.
+      </div>
+    </footer>
+  </body>
+</html>

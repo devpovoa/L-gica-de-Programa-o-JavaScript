@@ -1,9 +1,18 @@
-pre {
-  font-size: 1.2em;
+img {
+  /* clip-path: circle(50%); */
+  width: 22rem;
+  height: 22rem;
 }
 
-img {
-  clip-path: circle(50%);
+h1 {
+  border-bottom-style: inset;
+}
+
+div {
+  padding: 0.5rem;
+}
+pre {
+  font-size: 1.2em;
 }
 
 .cores-Brasil {
