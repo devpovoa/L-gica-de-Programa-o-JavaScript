@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Serviços automotivos e mecânica em geral."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- <script src="/js/controleServico.js" defer></script> -->
+    <script src="/js/controleServico-refatorado.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="/img/ordem-de-servico.png"
+      type="image/x-icon"
+    />
+    <title>AutoJS</title>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <img
+            src="/img/ordem-de-servico.png"
+            alt="Logo de Serviço"
+            class="img-fluid"
+          />
+        </div>
+
+        <div class="col-sm-9">
+          <h1>Controle de Serviços AutoJS</h1>
+          <form>
+            <div>
+              <label for="inServico">Serviços - Automotivos:</label>
+              <input
+                type="text"
+                name="servico"
+                id="inServico"
+                class="form-control"
+                required
+                autofocus
+              />
+            </div>
+
+            <div>
+              <input
+                type="submit"
+                value="Adicionar Serviço"
+                class="btn btn-primary"
+              />
+              <input
+                type="button"
+                value="Executar Serviço"
+                id="btExecutar"
+                class="btn btn-danger"
+              />
+            </div>
+
+            <h3>Serviços Pendentes: <span class="counterService"></span></h3>
+            <h6 class="bg-danger text-white">&nbsp;Serviços em Execução:</h6>
+            <h4></h4>
+          </form>
+        </div>
+      </div>
+    </header>
+    <footer>
+      <address>
+        &copy; 2024 <span class="final">DevPovoa</span> - Todos direitos
+        reservados. <br />
+        Desenvolvido por
+        <a href="mailto:thiagopovoadev@hotmail.com">DevPovoa</a>
+      </address>
+    </footer>
+  </body>
+</html>

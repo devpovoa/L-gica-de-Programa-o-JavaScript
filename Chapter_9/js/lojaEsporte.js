@@ -3,6 +3,22 @@
 const frm = document.querySelector("form");
 const imClube = document.querySelector("#imgClube");
 const dvTitulo = document.querySelector("#divTitulo");
+const contaVisita = document.querySelectorAll("h5")[1];
+
+const contaVisitas = () => {
+ let contador = 0;
+
+ if (localStorage.getItem("lojaContador")) {
+  contador += parseInt(localStorage.getItem("lojaContador"));
+ };
+
+ contador++;
+
+ const saida = contador == 1 ? `Muito Bem-Vindo! Esta é sua primeira visita ao nosso site.` : `Que bom que você voltou! Esta é a sua visita de número ${contador} ao nosso site.`;
+
+ contaVisita.textContent = saida;
+ localStorage.setItem("lojaContador", contador);
+};
 
 const { rbBasil, rbFlamengo, rbBotafogo } = frm;
 
@@ -51,7 +67,9 @@ const verificarClube = () => {
  if (clube && clubes[clube]) {
   clubes[clube].radio.checked = true;
   trocarClube();
- }
+ };
+
+ contaVisitas();
 };
 
 window.addEventListener("load", verificarClube);

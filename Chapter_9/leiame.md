@@ -24,6 +24,3 @@ getItem("chave");
 removeItem("chave");
 clear();
 ```
-
-
-

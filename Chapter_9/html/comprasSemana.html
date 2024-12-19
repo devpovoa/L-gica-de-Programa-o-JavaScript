@@ -5,69 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Jogo para apostas sobre o peso certo ou próximo da melância."
+      content="Controlador de compras da compras da semana."
     />
     <link
       rel="stylesheet"
       href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="shortcut icon" href="/img/melancia.png" type="image/x-icon" />
-    <!-- <script src="/js/melancia.js" defer></script> -->
-    <script src="/js/melancia-refactored.js" defer></script>
-    <title>Jogo da Melância</title>
+    <script src="/js/comprasSemana.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="/img/lista-de-compras.png"
+      type="image/x-icon"
+    />
+    <title>Lista de Compras</title>
   </head>
   <body>
     <header class="container-fluid">
       <div class="row">
         <div class="col-sm-4">
-          <img src="/img/melancia.png" alt="Melancia" class="img-fluid" />
+          <img
+            src="/img/lista-de-compras.png"
+            alt="Logo da Lista de Compras"
+            class="img-fluid"
+          />
         </div>
 
         <div class="col-sm-8">
-          <h1>Qual é o peso da Melância?</h1>
+          <h1>Lista de Compras da Semana JS</h1>
+
           <form>
             <div>
-              <label for="inNome">Nome do Apostador:</label>
+              <label for="inProduto">Produto:</label>
               <input
                 type="text"
-                name="nome"
-                id="inNome"
+                name="produto"
+                id="inProduto"
                 class="form-control"
+                oninput="validarLetras(this)"
                 required
                 autofocus
               />
+              <span id="erro">Apenas letras são permitidas!</span>
             </div>
 
             <div>
-              <label for="inPeso">Peso (em gramas):</label>
-              <input
-                type="text"
-                name="peso"
-                id="inPeso"
-                class="form-control"
-                required
-              />
-            </div>
-
-            <div>
-              <input type="submit" value="Apostar" class="btn btn-primary" />
+              <input type="submit" value="Adicionar" class="btn btn-primary" />
               <input
                 type="button"
-                value="Vencedor"
-                id="btVencedor"
-                class="btn btn-warning"
-              />
-              <input
-                type="button"
-                value="Limpar Apostas"
+                value="Limpar Lista"
                 id="btLimpar"
                 class="btn btn-danger"
               />
             </div>
           </form>
 
-          <pre></pre>
+          <h5>Produtos Adicionados</h5>
+          <pre class="outLista"></pre>
         </div>
       </div>
     </header>
