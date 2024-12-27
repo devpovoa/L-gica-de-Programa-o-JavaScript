@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Agendado de tarefas diárias." />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="shortcut icon" href="/img/agenda.png" type="image/x-icon" />
+    <!-- <script src="/js/tarefas-diarias.js" defer></script> -->
+    <script src="/js/tarefas-diarias-Refatorada.js" defer></script>
+    <title>Tarefas Diárias</title>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <div class="row">
+        <aside class="col-sm-4">
+          <img src="/img/agenda.png" alt="Tarefas" class="img-fluid" />
+        </aside>
+
+        <section class="col-sm-8" id="quadro-tarefas">
+          <h1>Tarefas do Dia (a realizar)</h1>
+
+          <form>
+            <label for="inTarefa">Tarefa:</label>
+            <input
+              type="text"
+              name="tarefa"
+              id="inTarefa"
+              class="form-control"
+              required
+              autofocus
+            />
+            <br />
+            <input
+              type="submit"
+              value="Adicionar &#10003;"
+              class="btn btn-primary"
+            />
+
+            <input
+              type="button"
+              value="Selecionar &#8645;"
+              class="btn btn-info"
+              id="btSelecionar"
+            />
+
+            <input
+              type="button"
+              value="Retirar Selecionada &#10007;"
+              class="btn btn-danger"
+              id="btRetirar"
+            />
+
+            <input
+              type="button"
+              value="Gravar &#9673;"
+              class="btn btn-success"
+              id="btGravar"
+            />
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 DevPovoa - Todos direitos reservados.</p>
+      <address>
+        Desenvolvido por
+        <a href="mailto:thiagopovoadev@hotmail.com">DevPovoa</a>
+      </address>
+    </footer>
+  </body>
+</html>
