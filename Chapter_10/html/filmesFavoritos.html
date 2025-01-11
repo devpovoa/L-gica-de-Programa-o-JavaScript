@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tabela para adicionar filmes favoritos."
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- <script src="/js/filmesFavoritos.js" defer></script> -->
+    <script src="/js/filmesFavoritos-refatorado.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="/img/filmes_favoritos.png"
+      type="image/x-icon"
+    />
+    <title>Filmes Favoritos</title>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <div class="row">
+        <aside class="col-sm-4">
+          <img
+            src="/img/filmes_favoritos.png"
+            alt="Cinema, pipoca e guaraná"
+            class="img-fluid"
+          />
+        </aside>
+
+        <section class="col-sm-8">
+          <h1>Lista de Filmes Favoritos</h1>
+
+          <form>
+            <label for="inTitulo">Título do Filme:</label>
+            <input
+              type="text"
+              name="titulo"
+              id="inTitulo"
+              class="form-control"
+              autofocus
+              required
+            />
+            <br />
+            <label for="inGenero">Gênero:</label>
+            <input
+              type="text"
+              name="genero"
+              id="inGenero"
+              class="form-control"
+              required
+            />
+            <br />
+            <input
+              type="submit"
+              value="Adicionar &#10003;"
+              class="btn btn-primary float-right mb-3"
+            />
+          </form>
+
+          <table class="table table-striped">
+            <tr>
+              <th scope="col">Título do Filme</th>
+              <th scope="col">Gênero</th>
+              <th scope="col">Ações</th>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </main>
+    <!-- <footer>
+      <h6>&copy; 2024 DevPovoa - Todos os direitos reservados.</h6>
+      <address>
+        Desenvolvido por
+        <a href="mailto:thiagopovoadev@hotmail.com">DevPovoa</a>
+      </address>
+    </footer> -->
+  </body>
+</html>

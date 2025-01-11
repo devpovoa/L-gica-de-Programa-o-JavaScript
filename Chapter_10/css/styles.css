@@ -2,8 +2,18 @@ h1 {
   border-bottom-style: inset;
 }
 
+img {
+  width: 20rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
 form {
   margin-bottom: 1rem;
+}
+
+#inValor {
+  width: 40.5%;
 }
 
 .tarefa-selecionada {
@@ -41,6 +51,11 @@ img.moeda0-10 {
 
 .alinha-direita {
   text-align: right;
+}
+
+.exclui {
+  color: red;
+  cursor: pointer;
 }
 
 footer,

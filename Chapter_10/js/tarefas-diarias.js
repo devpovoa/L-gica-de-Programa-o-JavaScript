@@ -1,7 +1,7 @@
 "use strict";
 
 const frm = document.querySelector("form");
-const dvQuadro = document.querySelector("#divQuadro");
+const quadroTarefas = document.querySelector("#quadro-tarefas");
 
 frm.addEventListener("submit", (e) => {
  e.preventDefault();
@@ -11,7 +11,7 @@ frm.addEventListener("submit", (e) => {
  const h5 = document.createElement("h5");
  const texto = document.createTextNode(tarefa);
 
- dvQuadro.appendChild(h5).appendChild(texto);
+ quadroTarefas.appendChild(h5).appendChild(texto);
 
  frm.inTarefa.value = '';
  frm.inTarefa.focus();
@@ -61,7 +61,7 @@ frm.btRetirar.addEventListener("click", () => {
  };
 
  if (confirm(`Confirma Exclusão de "${tarefas[aux].textContent}"?`)) {
-  dvQuadro.removeChild(tarefas[aux]);
+  quadroTarefas.removeChild(tarefas[aux]);
  };
 });
 
@@ -94,7 +94,7 @@ window.addEventListener("load", () => {
   dados.forEach(dado => {
    const h5 = document.createElement("h5");
    const texto = document.createTextNode(dado);
-   dvQuadro.appendChild(texto).appendChild(h5);
+   quadroTarefas.appendChild(texto).appendChild(h5);
   });
  };
 });
