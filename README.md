@@ -12,7 +12,7 @@
 
 # :bookmark_tabs: Estudo do Livro *Lógica de Programação e Algoritmos com JavaScript - 2ª Edição* 📚💻
 
-Este repositório contém anotações, exercícios e projetos baseados no livro **"[Lógica de Programação e Algoritmos com JavaScript - 2ª Edição](https://www.amazon.com.br/L%C3%B3gica-Programa%C3%A7%C3%A3o-Algoritmos-com-JavaScript/dp/8550812654)"** de *Edécio Fernando*. É uma excelente referência para quem deseja aprender ou aprofundar seus conhecimentos em lógica de programação e desenvolvimento com JavaScript.
+Este repositório contém anotações, exercícios e projetos baseados no livro **"[Lógica de Programação e Algoritmos com JavaScript - 2ª Edição](https://www.amazon.com.br/L%C3%B3gica-Programa%C3%A7%C3%A3o-Algoritmos-com-JavaScript/dp/6586057906)"** de *Edécio Fernando*. É uma excelente referência para quem deseja aprender ou aprofundar seus conhecimentos em lógica de programação e desenvolvimento com JavaScript.
 
 ---
 
