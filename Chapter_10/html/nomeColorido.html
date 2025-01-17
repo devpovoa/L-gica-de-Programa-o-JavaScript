@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Programa que divide os nome e sobre nome de forma colorida."
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="shortcut icon" href="/img/people.png" type="image/x-icon" />
+    <!-- <script src="/js/nomeColorido.js" defer></script> -->
+    <script src="/js/nomeColorido-refatorado.js" defer></script>
+    <title>Nome Colorido</title>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <div class="row">
+        <aside class="col-sm-4">
+          <img src="/img/people.png" alt="Logo de Pessoas" class="img-fluid" />
+        </aside>
+
+        <section class="col-sm-8" id="dvNome">
+          <h1>Nome Colorido</h1>
+
+          <form>
+            <label for="inNome">Nome Completo:</label>
+            <input
+              type="text"
+              name="inNome"
+              id="inNome"
+              class="form-control"
+              required
+              autofocus
+            />
+            <br />
+            <input
+              type="submit"
+              value="Exibir Partes do Nome &#10003;"
+              name="btExibir"
+              class="btn btn-primary"
+            />
+
+            <input
+              type="reset"
+              value="Nova Lista de Nome &#8635;"
+              class="btn btn-danger"
+            />
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

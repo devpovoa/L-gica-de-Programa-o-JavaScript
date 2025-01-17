@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Programa que mostra as velas de aniversário."
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- <script src="/js/aniversario.js" defer></script> -->
+    <script src="/js/aniversario-refatorado.js" defer></script>
+    <link rel="shortcut icon" href="/img/aniversario.png" type="image/x-icon" />
+    <title>Velas de Aniversário</title>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <div class="row">
+        <aside class="col-sm-4">
+          <img
+            src="/img/aniversario.png"
+            alt="Bolo de Aniversário"
+            class="img-fluid"
+          />
+        </aside>
+
+        <section class="col-sm-8" id="quadro-numeros">
+          <h1>Velas de Aniversário</h1>
+
+          <form>
+            <label for="inIdade">Idade:</label>
+            <input
+              type="number"
+              min="1"
+              max="120"
+              id="inIdade"
+              name="inIdade"
+              class="form-control"
+              required
+              autofocus
+            />
+            <br />
+            <input
+              type="submit"
+              value="Exibir Velas &#10003;"
+              name="btExibir"
+              class="btn btn-primary"
+            />
+
+            <input
+              type="reset"
+              value="Novas Velas &#8635;"
+              class="btn btn-danger"
+            />
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

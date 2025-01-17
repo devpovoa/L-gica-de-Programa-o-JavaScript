@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Programa para montar a tabela de classificados para a Copa do Brasil."
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- <script src="/js/copaDoBrasil.js" defer></script> -->
+    <script src="/js/copaDoBrasil-refatorado.js" defer></script>
+    <link rel="shortcut icon" href="/img/football.png" type="image/x-icon" />
+    <title>Copa do Brasil</title>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            src="/img/football.png"
+            alt="Logo da Taça do Brasil"
+            class="img-fluid"
+          />
+        </div>
+
+        <div class="col-sm-8" id="dvJogos">
+          <h1>Tabela da Copa do Brasil - Classificados</h1>
+
+          <form>
+            <label for="inClube">Clube:</label>
+            <input
+              type="text"
+              name="inClube"
+              class="form-control"
+              autofocus
+              required
+            />
+            <br />
+            <input
+              type="submit"
+              value="Adicionar"
+              id="btAdicionar"
+              class="btn btn-primary"
+            />
+            <input
+              type="button"
+              value="Montar Tabela de Jogos"
+              id="btMontar"
+              class="btn btn-success"
+            />
+            <input type="reset" value="Novo Clubes" class="btn btn-danger" />
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

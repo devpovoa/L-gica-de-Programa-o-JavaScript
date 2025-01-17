@@ -58,6 +58,10 @@ img.moeda0-10 {
   cursor: pointer;
 }
 
+.idade-img {
+  width: 100px;
+}
+
 footer,
 paddress {
   width: 100%;
