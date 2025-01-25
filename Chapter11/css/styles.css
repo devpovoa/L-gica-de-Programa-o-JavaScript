@@ -13,13 +13,15 @@ pre {
 
 figure {
   display: inline-block;
-  font-size: 0.7em;
-  margin: 5px;
+  font-size: 0.8em;
+  margin: 6px;
 }
 
 img.poltrona {
-  width: 24px;
-  height: 16px;
+  width: 27px;
+  height: 18px;
+  margin: 1px;
+  padding: 1px;
 }
 
 .entre-letras {
