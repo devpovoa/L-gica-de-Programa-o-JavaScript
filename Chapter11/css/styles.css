@@ -27,3 +27,12 @@ img.poltrona {
 .entre-letras {
   letter-spacing: 0.5em;
 }
+
+.exclui {
+  color: red;
+  cursor: pointer;
+}
+
+.corFundo {
+  background-color: lightskyblue;
+}
